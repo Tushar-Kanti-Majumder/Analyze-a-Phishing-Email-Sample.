@@ -1,1 +1,2 @@
 # Analyze-a-Phishing-Email-Sample.
+First, I checked the email headers using an online header analyzer and found discrepancies that suggest the email may be spoofed. Next, I identified a suspicious attachment, which could potentially be harmful or contain malware. Then, I reviewed the email body and noticed it created a false sense of urgency about an account I don’t even have, which is a common phishing tactic. I’ve attached all the needful files for reference and a report file also where whole proccess or walkthrough has been explained briefly.
