@@ -1,0 +1,1270 @@
+Delivered-To: computertushar31@gmail.com
+Received: by 2002:a05:622a:50e:b0:4b0:690d:c825 with SMTP id l14csp1263115qtx;
+        Tue, 5 Aug 2025 05:28:39 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IElH+5L+ovwiwdGoncpb/sgvGmIXGZI8wijXs9U9cQC8A94X/DeEwheXSCpxhf63Hc2lGxx
+X-Received: by 2002:a05:6000:2387:b0:3a4:ee3f:8e1e with SMTP id ffacd0b85a97d-3b8d94c0cfcmr9998762f8f.39.1754396918890;
+        Tue, 05 Aug 2025 05:28:38 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1754396918; cv=none;
+        d=google.com; s=arc-20240605;
+        b=NtOAwmUIAbLcExDKwS63PVdJIoUXai4uYAmVhUWPKNKLs/1EelSPg/+9QwSGnH1v1q
+         fZ097XEygfdH7X9ZFBODxkA1epdy8c8nYvsx4iBeu2eBLZ/DlPF7EcuySACL1ObCtogh
+         9Vv2h/HQVILW3KiZaAqlsO5h2dloe2yE8W6TTeeg5z1sRGrLwaUY/ulLtL2AbZ/paGcu
+         ayg19GCzYYAtp4Z+876H5PNEzzfvLKcLBZaewCpFOv1UsVUXipJNkjWJYuqH8PJ8vky/
+         YNQLGcOKTznaVdqo5WJruEfoEAiEbHsmYUrWODTARCLeNuTVUqte59QG2dC+BgHQ93Ri
+         BEmg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=mime-version:date:message-id:subject:to:from:dkim-signature
+         :resent-sender;
+        bh=yNFBpawWMEQpq5KUIfMY61Hn4KigkExpI18a7ZzwqKc=;
+        fh=XeC8ljG2VA3IxsIyh92CS72rChRR2waEgMY5q1VP59I=;
+        b=UADacfA2FJ/pj6B8WHKmFrjXxghDlUBGhUDpfsW7FEdeKVPeys4jra6A5TwPAup00S
+         7OosFHuARAnHJMMbhHniNb7u26ECCvM9S1YA8TrQ55fBb5zsxaot+wxmB2jZfh6X8YSO
+         c+hMW2PoGfCLl64ojyd5JkMaSxyMiKZOEcSbc586E5jPoAR8Vp2aWZgKIVjk+WQFefqa
+         gDpxZI/HovaER4Vja1LIy18UnII0bK6ThDFXEdHV5SmEK7MHrXdfDUyqoFcy1i5JAiQj
+         w8qCBv4WM6z1FOyBGmsF+OdD/qlcVNQSpwx7B/tubekhS9e9T7NeujfB5ya52Ow1Dvy/
+         GUpw==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@companypolicy.au header.s=postal-kB6YjV header.b=E+lUh8Xk;
+       spf=pass (google.com: domain of ei7cox@psrp.companypolicy.au designates 99.80.168.14 as permitted sender) smtp.mailfrom=ei7cox@psrp.companypolicy.au
+Return-Path: <ei7cox@psrp.companypolicy.au>
+Received: from mail.user-training.com (ec2-99-80-168-14.eu-west-1.compute.amazonaws.com. [99.80.168.14])
+        by mx.google.com with ESMTPS id ffacd0b85a97d-3b79c4cbf37si6619136f8f.9.2025.08.05.05.28.38
+        for <computertushar31@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Tue, 05 Aug 2025 05:28:38 -0700 (PDT)
+Received-SPF: pass (google.com: domain of ei7cox@psrp.companypolicy.au designates 99.80.168.14 as permitted sender) client-ip=99.80.168.14;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@companypolicy.au header.s=postal-kB6YjV header.b=E+lUh8Xk;
+       spf=pass (google.com: domain of ei7cox@psrp.companypolicy.au designates 99.80.168.14 as permitted sender) smtp.mailfrom=ei7cox@psrp.companypolicy.au
+Resent-Sender: ei7cox@psrp.companypolicy.au
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+	d=companypolicy.au;
+	s=postal-kB6YjV; t=1754396918;
+	bh=yNFBpawWMEQpq5KUIfMY61Hn4KigkExpI18a7ZzwqKc=;
+	h=content-type:from:to:subject:message-id:date:mime-version;
+	b=E+lUh8XkboY10O3LMS3N8eXT0WAyjVVyrEV3mxUiertx9vUBatXDgWKFrbpx958BNhOT6hUR
+	+0eeuxe5NqJtgNlrtRr/pLMK1AQcUbAxrGT7f8m7H7/UE1F+7MpymhrVkp0gpOCyoi1V2jrl
+	zvelKzLpYTzGngnmA5xjz9o0Wsk=
+X-Postal-MsgID: d8EFQXkOX3EB
+Content-Type: multipart/mixed; boundary="--_NmP-a4d018f0348545d5-Part_1"
+X-Usecure-Phish-Alert-Sim: -1
+X-Usecure-Phish-Alert-User: -1
+From: AJ Bell <ajbell@companypolicy.au>
+To: computertushar31@gmail.com
+Subject: Your dealing charges are reducing
+Message-ID: <cd0c7f70-35d5-232f-0a7c-10981f6625ee@companypolicy.au>
+Date: Tue, 05 Aug 2025 12:28:38 +0000
+MIME-Version: 1.0
+
+----_NmP-a4d018f0348545d5-Part_1
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html><html xmlns=3D"http://www.w3.org/1999/xhtml" =
+xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-microsoft-=
+com:office:office"><head><!--[if gte mso 9]><xml>  <o:OfficeDocumentSetting=
+s>    <o:AllowPNG/>    <o:PixelsPerInch>96</o:PixelsPerInch>  =
+</o:OfficeDocumentSettings></xml><![endif]-->  <meta =
+http-equiv=3D"Content-Type" content=3D"text/html; charset=3DUTF-8">  <meta =
+name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D1.0">  =
+<meta name=3D"x-apple-disable-message-reformatting">  <!--[if !mso]><!=
+--><meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge"><!--<!=
+[endif]-->  <title></title>      <style type=3D"text/css">      @media only=
+ screen and (min-width: 520px) {  .u-row {    width: 500px !important;  }  =
+.u-row .u-col {    vertical-align: top;  }  .u-row .u-col-33p33 {    width:=
+ 166.65px !important;  }  .u-row .u-col-100 {    width: 500px !important;  =
+}}@media (max-width: 520px) {  .u-row-container {    max-width: 100% !=
+important;    padding-left: 0px !important;    padding-right: 0px !=
+important;  }  .u-row .u-col {    min-width: 320px !important;    =
+max-width: 100% !important;    display: block !important;  }  .u-row {    =
+width: 100% !important;  }  .u-col {    width: 100% !important;  }  .u-col =
+> div {    margin: 0 auto;  }}body {  margin: 0;  padding: 0;}table,tr,td {=
+  vertical-align: top;  border-collapse: collapse;}p {  margin: 0;}.=
+ie-container table,.mso-container table {  table-layout: fixed;}* {  =
+line-height: inherit;}a[x-apple-data-detectors=3D'true'] {  color: inherit =
+!important;  text-decoration: none !important;}table, td { color: #000000; =
+} </style>    <meta name=3D"usecure:sid" content=3D"-1"><meta =
+name=3D"usecure:uid" content=3D"-1"></head><body class=3D"clean-body =
+u_body" style=3D"margin: 0;padding: 0;-webkit-text-size-adjust: =
+100%;background-color: #e7e7e7;color: #000000">  <!--[if IE]><div =
+class=3D"ie-container"><![endif]-->  <!--[if mso]><div =
+class=3D"mso-container"><![endif]-->  <table style=3D"border-collapse: =
+collapse;table-layout: fixed;border-spacing: 0;mso-table-lspace: =
+0pt;mso-table-rspace: 0pt;vertical-align: top;min-width: 320px;Margin: 0 =
+auto;background-color: #e7e7e7;width:100%" cellpadding=3D"0" =
+cellspacing=3D"0">  <tbody>  <tr style=3D"vertical-align: top">    <td =
+style=3D"word-break: break-word;border-collapse: collapse !=
+important;vertical-align: top">    <!--[if (mso)|(IE)]><table =
+width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0"><tr><td =
+align=3D"center" style=3D"background-color: #e7e7e7;"><![endif]-->        =
+<div class=3D"u-row-container" style=3D"padding: 0px;background-color: =
+transparent">  <div class=3D"u-row" style=3D"margin: 0 auto;min-width: =
+320px;max-width: 500px;overflow-wrap: break-word;word-wrap: =
+break-word;word-break: break-word;background-color: transparent;">    <div =
+style=3D"border-collapse: collapse;display: table;width: 100%;height: =
+100%;background-color: transparent;">      <!--[if (mso)|(IE)]><table =
+width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0"><tr><td =
+style=3D"padding: 0px;background-color: transparent;" =
+align=3D"center"><table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" =
+style=3D"width:500px;"><tr style=3D"background-color: transparent;"><!=
+[endif]-->      <!--[if (mso)|(IE)]><td align=3D"center" width=3D"500" =
+style=3D"width: 500px;padding: 0px;border-top: 0px solid =
+transparent;border-left: 0px solid transparent;border-right: 0px solid =
+transparent;border-bottom: 0px solid transparent;border-radius: =
+0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;" valign=3D"top"><!=
+[endif]--><div class=3D"u-col u-col-100" style=3D"max-width: =
+320px;min-width: 500px;display: table-cell;vertical-align: top;">  <div =
+style=3D"height: 100%;width: 100% !important;border-radius: =
+0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">  <!--[if (!=
+mso)&(!IE)]><!--><div style=3D"box-sizing: border-box; height: 100%; =
+padding: 0px;border-top: 0px solid transparent;border-left: 0px solid =
+transparent;border-right: 0px solid transparent;border-bottom: 0px solid =
+transparent;border-radius: 0px;-webkit-border-radius: 0px; =
+-moz-border-radius: 0px;"><!--<![endif]-->  <table style=3D"font-family:ari=
+al,helvetica,sans-serif;" role=3D"presentation" cellpadding=3D"0" =
+cellspacing=3D"0" width=3D"100%" border=3D"0">  <tbody>    <tr>      <td =
+style=3D"overflow-wrap:break-word;word-break:break-word;padding:20px =
+10px;font-family:arial,helvetica,sans-serif;" align=3D"left">          =
+<table height=3D"0px" align=3D"center" border=3D"0" cellpadding=3D"0" =
+cellspacing=3D"0" width=3D"100%" style=3D"border-collapse: =
+collapse;table-layout: fixed;border-spacing: 0;mso-table-lspace: =
+0pt;mso-table-rspace: 0pt;vertical-align: top;border-top: 0px solid =
+#BBBBBB;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%">    =
+<tbody>      <tr style=3D"vertical-align: top">        <td =
+style=3D"word-break: break-word;border-collapse: collapse !=
+important;vertical-align: top;font-size: 0px;line-height: =
+0px;mso-line-height-rule: exactly;-ms-text-size-adjust: =
+100%;-webkit-text-size-adjust: 100%">          <span>&nbsp;</span>        =
+</td>      </tr>    </tbody>  </table>      </td>    </tr>  =
+</tbody></table>  <!--[if (!mso)&(!IE)]><!--></div><!--<![endif]-->  =
+</div></div><!--[if (mso)|(IE)]></td><![endif]-->      <!--[if =
+(mso)|(IE)]></tr></table></td></tr></table><![endif]-->    </div>  </div>  =
+</div>      <div class=3D"u-row-container" style=3D"padding: =
+0px;background-color: transparent">  <div class=3D"u-row" style=3D"margin: =
+0 auto;min-width: 320px;max-width: 500px;overflow-wrap: =
+break-word;word-wrap: break-word;word-break: break-word;background-color: =
+transparent;">    <div style=3D"border-collapse: collapse;display: =
+table;width: 100%;height: 100%;background-color: transparent;">      <!=
+--[if (mso)|(IE)]><table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0"=
+ border=3D"0"><tr><td style=3D"padding: 0px;background-color: transparent;"=
+ align=3D"center"><table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" =
+style=3D"width:500px;"><tr style=3D"background-color: transparent;"><!=
+[endif]-->      <!--[if (mso)|(IE)]><td align=3D"center" width=3D"500" =
+style=3D"background-color: #d51132;width: 500px;padding: 0px;border-top: =
+0px solid transparent;border-left: 0px solid transparent;border-right: 0px =
+solid transparent;border-bottom: 0px solid transparent;border-radius: =
+0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;" valign=3D"top"><!=
+[endif]--><div class=3D"u-col u-col-100" style=3D"max-width: =
+320px;min-width: 500px;display: table-cell;vertical-align: top;">  <div =
+style=3D"background-color: #d51132;height: 100%;width: 100% !=
+important;border-radius: 0px;-webkit-border-radius: 0px; =
+-moz-border-radius: 0px;">  <!--[if (!mso)&(!IE)]><!--><div =
+style=3D"box-sizing: border-box; height: 100%; padding: 0px;border-top: 0px=
+ solid transparent;border-left: 0px solid transparent;border-right: 0px =
+solid transparent;border-bottom: 0px solid transparent;border-radius: =
+0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;"><!--<![endif]--> =
+ <table style=3D"font-family:arial,helvetica,sans-serif;" =
+role=3D"presentation" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" =
+border=3D"0">  <tbody>    <tr>      <td style=3D"overflow-wrap:break-word;w=
+ord-break:break-word;padding:10px;font-family:arial,helvetica,sans-serif;" =
+align=3D"left">          <div style=3D"font-size: 12px; line-height: 140%; =
+text-align: center; word-wrap: break-word;">    <p style=3D"line-height: =
+140%;"><span style=3D"color: #ffffff; line-height: 19.6px;">Making it =
+cheaper for you to buy and sell shares</span></p>  </div>      </td>    =
+</tr>  </tbody></table>  <!--[if (!mso)&(!IE)]><!--></div><!--<![endif]--> =
+ </div></div><!--[if (mso)|(IE)]></td><![endif]-->      <!--[if =
+(mso)|(IE)]></tr></table></td></tr></table><![endif]-->    </div>  </div>  =
+</div>      <div class=3D"u-row-container" style=3D"padding: =
+0px;background-color: transparent">  <div class=3D"u-row" style=3D"margin: =
+0 auto;min-width: 320px;max-width: 500px;overflow-wrap: =
+break-word;word-wrap: break-word;word-break: break-word;background-color: =
+transparent;">    <div style=3D"border-collapse: collapse;display: =
+table;width: 100%;height: 100%;background-color: transparent;">      <!=
+--[if (mso)|(IE)]><table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0"=
+ border=3D"0"><tr><td style=3D"padding: 0px;background-color: transparent;"=
+ align=3D"center"><table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" =
+style=3D"width:500px;"><tr style=3D"background-color: transparent;"><!=
+[endif]-->      <!--[if (mso)|(IE)]><td align=3D"center" width=3D"500" =
+style=3D"background-color: #ffffff;width: 500px;padding: 0px;border-top: =
+0px solid transparent;border-left: 0px solid transparent;border-right: 0px =
+solid transparent;border-bottom: 0px solid transparent;border-radius: =
+0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;" valign=3D"top"><!=
+[endif]--><div class=3D"u-col u-col-100" style=3D"max-width: =
+320px;min-width: 500px;display: table-cell;vertical-align: top;">  <div =
+style=3D"background-color: #ffffff;height: 100%;width: 100% !=
+important;border-radius: 0px;-webkit-border-radius: 0px; =
+-moz-border-radius: 0px;">  <!--[if (!mso)&(!IE)]><!--><div =
+style=3D"box-sizing: border-box; height: 100%; padding: 0px;border-top: 0px=
+ solid transparent;border-left: 0px solid transparent;border-right: 0px =
+solid transparent;border-bottom: 0px solid transparent;border-radius: =
+0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;"><!--<![endif]--> =
+ <table style=3D"font-family:arial,helvetica,sans-serif;" =
+role=3D"presentation" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" =
+border=3D"0">  <tbody>    <tr>      <td style=3D"overflow-wrap:break-word;w=
+ord-break:break-word;padding:13px 10px;font-family:arial,helvetica,=
+sans-serif;" align=3D"left">        <table width=3D"100%" cellpadding=3D"0"=
+ cellspacing=3D"0" border=3D"0">  <tbody><tr>    <td =
+style=3D"padding-right: 0px;padding-left: 0px;" align=3D"center">          =
+  <img align=3D"center" border=3D"0" src=3D"https://usecure.s3.eu-west-1.=
+amazonaws.com/wysiwyg1705289955750-922557.jpg" alt=3D"" title=3D"" =
+style=3D"outline: none;text-decoration: none;-ms-interpolation-mode: =
+bicubic;clear: both;display: inline-block !important;border: none;height: =
+auto;float: none;width: 33%;max-width: 158.4px;" width=3D"158.4">          =
+</td>  </tr></tbody></table>      </td>    </tr>  </tbody></table><table =
+style=3D"font-family:arial,helvetica,sans-serif;" role=3D"presentation" =
+cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" border=3D"0">  <tbody>  =
+  <tr>      <td style=3D"overflow-wrap:break-word;word-break:break-word;pad=
+ding:10px 20px;font-family:arial,helvetica,sans-serif;" align=3D"left">    =
+      <div style=3D"font-size: 15px; color: #d51132; line-height: 140%; =
+text-align: left; word-wrap: break-word;">    <p style=3D"line-height: =
+140%;"><strong>Dealing charges are reducing from September 1, =
+2024</strong></p>  </div>      </td>    </tr>  </tbody></table><table =
+style=3D"font-family:arial,helvetica,sans-serif;" role=3D"presentation" =
+cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" border=3D"0">  <tbody>  =
+  <tr>      <td style=3D"overflow-wrap:break-word;word-break:break-word;pad=
+ding:10px 20px;font-family:arial,helvetica,sans-serif;" align=3D"left">    =
+      <div style=3D"font-size: 13px; line-height: 140%; text-align: left; =
+word-wrap: break-word;">    <p style=3D"line-height: 140%;"><span =
+style=3D"color: #565656; line-height: 18.2px;">Dear </span>Tushar<span =
+style=3D"color: #565656; line-height: 18.2px;">,</span></p><p =
+style=3D"line-height: 140%;">&nbsp;</p><p style=3D"line-height: =
+140%;"><span style=3D"color: #565656; line-height: 18.2px;">Thank you for =
+choosing AJ Bell as your preferred investment platform provider.=
+</span></p><p style=3D"line-height: 140%;">&nbsp;</p><p =
+style=3D"line-height: 140%;"><span style=3D"color: #565656; line-height: 18=
+.2px;">As part of our continued commitment to delivering great value to our=
+ customers, we're reducing our dealing charges from September 1, 2024.=
+&nbsp;</span></p>  </div>      </td>    </tr>  </tbody></table><table =
+style=3D"font-family:arial,helvetica,sans-serif;" role=3D"presentation" =
+cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" border=3D"0">  <tbody>  =
+  <tr>      <td style=3D"overflow-wrap:break-word;word-break:break-word;pad=
+ding:10px 20px;font-family:arial,helvetica,sans-serif;" align=3D"left">    =
+      <div style=3D"font-size: 15px; color: #d51132; line-height: 140%; =
+text-align: left; word-wrap: break-word;">    <p style=3D"line-height: =
+140%;"><strong>We're cutting the dealing charge you pay to buy and sell =
+shares on all AJ Bell investment accounts</strong></p>  </div>      </td>  =
+  </tr>  </tbody></table>  <!--[if (!mso)&(!IE)]><!--></div><!--<!=
+[endif]-->  </div></div><!--[if (mso)|(IE)]></td><![endif]-->      <!--[if =
+(mso)|(IE)]></tr></table></td></tr></table><![endif]-->    </div>  </div>  =
+</div>      <div class=3D"u-row-container" style=3D"padding: =
+0px;background-color: transparent">  <div class=3D"u-row" style=3D"margin: =
+0 auto;min-width: 320px;max-width: 500px;overflow-wrap: =
+break-word;word-wrap: break-word;word-break: break-word;background-color: =
+#ffffff;">    <div style=3D"border-collapse: collapse;display: table;width:=
+ 100%;height: 100%;background-color: transparent;">      <!--[if =
+(mso)|(IE)]><table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" =
+border=3D"0"><tr><td style=3D"padding: 0px;background-color: transparent;" =
+align=3D"center"><table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" =
+style=3D"width:500px;"><tr style=3D"background-color: #ffffff;"><!=
+[endif]-->      <!--[if (mso)|(IE)]><td align=3D"center" width=3D"165" =
+style=3D"width: 165px;padding: 0px;border-top: 1px solid #CCC;border-left: =
+0px solid transparent;border-right: 1px solid #CCC;border-bottom: 1px solid=
+ #CCC;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: =
+0px;" valign=3D"top"><![endif]--><div class=3D"u-col u-col-33p33" =
+style=3D"max-width: 320px;min-width: 166.67px;display: =
+table-cell;vertical-align: top;">  <div style=3D"height: 100%;width: 100% !=
+important;border-radius: 0px;-webkit-border-radius: 0px; =
+-moz-border-radius: 0px;">  <!--[if (!mso)&(!IE)]><!--><div =
+style=3D"box-sizing: border-box; height: 100%; padding: 0px;border-top: 1px=
+ solid #CCC;border-left: 0px solid transparent;border-right: 1px solid =
+#CCC;border-bottom: 1px solid #CCC;border-radius: 0px;-webkit-border-radius=
+: 0px; -moz-border-radius: 0px;"><!--<![endif]-->  <table =
+style=3D"font-family:arial,helvetica,sans-serif;" role=3D"presentation" =
+cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" border=3D"0">  <tbody>  =
+  <tr>      <td style=3D"overflow-wrap:break-word;word-break:break-word;pad=
+ding:20px 10px 20px 30px;font-family:arial,helvetica,sans-serif;" =
+align=3D"left">          <div style=3D"font-size: 14px; color: #626262; =
+line-height: 140%; text-align: left; word-wrap: break-word;">    <p =
+style=3D"line-height: 140%;"><strong>Dealing Charges</strong></p>  </div>  =
+    </td>    </tr>  </tbody></table>  <!--[if (!mso)&(!IE)]><!--></div><!=
+--<![endif]-->  </div></div><!--[if (mso)|(IE)]></td><![endif]--><!--[if =
+(mso)|(IE)]><td align=3D"center" width=3D"165" style=3D"width: =
+165px;padding: 0px;border-top: 1px solid #CCC;border-left: 0px solid =
+transparent;border-right: 1px solid #CCC;border-bottom: 1px solid =
+#CCC;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: =
+0px;" valign=3D"top"><![endif]--><div class=3D"u-col u-col-33p33" =
+style=3D"max-width: 320px;min-width: 166.67px;display: =
+table-cell;vertical-align: top;">  <div style=3D"height: 100%;width: 100% !=
+important;border-radius: 0px;-webkit-border-radius: 0px; =
+-moz-border-radius: 0px;">  <!--[if (!mso)&(!IE)]><!--><div =
+style=3D"box-sizing: border-box; height: 100%; padding: 0px;border-top: 1px=
+ solid #CCC;border-left: 0px solid transparent;border-right: 1px solid =
+#CCC;border-bottom: 1px solid #CCC;border-radius: 0px;-webkit-border-radius=
+: 0px; -moz-border-radius: 0px;"><!--<![endif]-->  <table =
+style=3D"font-family:arial,helvetica,sans-serif;" role=3D"presentation" =
+cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" border=3D"0">  <tbody>  =
+  <tr>      <td style=3D"overflow-wrap:break-word;word-break:break-word;pad=
+ding:20px 10px 20px 30px;font-family:arial,helvetica,sans-serif;" =
+align=3D"left">          <div style=3D"font-size: 14px; color: #626262; =
+line-height: 140%; text-align: left; word-wrap: break-word;">    <p =
+style=3D"line-height: 140%;"><strong>Currently</strong></p>  </div>      =
+</td>    </tr>  </tbody></table>  <!--[if (!mso)&(!IE)]><!--></div><!--<!=
+[endif]-->  </div></div><!--[if (mso)|(IE)]></td><![endif]--><!--[if =
+(mso)|(IE)]><td align=3D"center" width=3D"166" style=3D"width: =
+166px;padding: 0px;border-top: 1px solid #CCC;border-left: 0px solid =
+transparent;border-right: 0px solid transparent;border-bottom: 1px solid =
+#CCC;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: =
+0px;" valign=3D"top"><![endif]--><div class=3D"u-col u-col-33p33" =
+style=3D"max-width: 320px;min-width: 166.67px;display: =
+table-cell;vertical-align: top;">  <div style=3D"height: 100%;width: 100% !=
+important;border-radius: 0px;-webkit-border-radius: 0px; =
+-moz-border-radius: 0px;">  <!--[if (!mso)&(!IE)]><!--><div =
+style=3D"box-sizing: border-box; height: 100%; padding: 0px;border-top: 1px=
+ solid #CCC;border-left: 0px solid transparent;border-right: 0px solid =
+transparent;border-bottom: 1px solid #CCC;border-radius: =
+0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;"><!--<![endif]--> =
+ <table style=3D"font-family:arial,helvetica,sans-serif;" =
+role=3D"presentation" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" =
+border=3D"0">  <tbody>    <tr>      <td style=3D"overflow-wrap:break-word;w=
+ord-break:break-word;padding:20px 14px 20px 30px;font-family:arial,=
+helvetica,sans-serif;" align=3D"left">          <div style=3D"font-size: =
+14px; color: #626262; line-height: 140%; text-align: left; word-wrap: =
+break-word;">    <p style=3D"line-height: 140%;"><strong>From September 1, =
+2024</strong></p>  </div>      </td>    </tr>  </tbody></table>  <!--[if (!=
+mso)&(!IE)]><!--></div><!--<![endif]-->  </div></div><!--[if =
+(mso)|(IE)]></td><![endif]-->      <!--[if (mso)|(IE)]></tr></table></td></=
+tr></table><![endif]-->    </div>  </div>  </div>      <div =
+class=3D"u-row-container" style=3D"padding: 0px;background-color: =
+transparent">  <div class=3D"u-row" style=3D"margin: 0 auto;min-width: =
+320px;max-width: 500px;overflow-wrap: break-word;word-wrap: =
+break-word;word-break: break-word;background-color: #ffffff;">    <div =
+style=3D"border-collapse: collapse;display: table;width: 100%;height: =
+100%;background-color: transparent;">      <!--[if (mso)|(IE)]><table =
+width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0"><tr><td =
+style=3D"padding: 0px;background-color: transparent;" =
+align=3D"center"><table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" =
+style=3D"width:500px;"><tr style=3D"background-color: #ffffff;"><!=
+[endif]-->      <!--[if (mso)|(IE)]><td align=3D"center" width=3D"165" =
+style=3D"width: 165px;padding: 0px;border-top: 0px solid =
+transparent;border-left: 0px solid transparent;border-right: 1px solid =
+#CCC;border-bottom: 1px solid #CCC;border-radius: 0px;-webkit-border-radius=
+: 0px; -moz-border-radius: 0px;" valign=3D"top"><![endif]--><div =
+class=3D"u-col u-col-33p33" style=3D"max-width: 320px;min-width: 166.=
+67px;display: table-cell;vertical-align: top;">  <div style=3D"height: =
+100%;width: 100% !important;border-radius: 0px;-webkit-border-radius: 0px; =
+-moz-border-radius: 0px;">  <!--[if (!mso)&(!IE)]><!--><div =
+style=3D"box-sizing: border-box; height: 100%; padding: 0px;border-top: 0px=
+ solid transparent;border-left: 0px solid transparent;border-right: 1px =
+solid #CCC;border-bottom: 1px solid #CCC;border-radius: =
+0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;"><!--<![endif]--> =
+ <table style=3D"font-family:arial,helvetica,sans-serif;" =
+role=3D"presentation" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" =
+border=3D"0">  <tbody>    <tr>      <td style=3D"overflow-wrap:break-word;w=
+ord-break:break-word;padding:20px 10px 20px 30px;font-family:arial,=
+helvetica,sans-serif;" align=3D"left">          <div style=3D"font-size: =
+12px; color: #626262; line-height: 140%; text-align: left; word-wrap: =
+break-word;">    <p style=3D"line-height: 140%;">Shares, ETFs, investment =
+trusts and gilts and bonds</p>  </div>      </td>    </tr>  =
+</tbody></table>  <!--[if (!mso)&(!IE)]><!--></div><!--<![endif]-->  =
+</div></div><!--[if (mso)|(IE)]></td><![endif]--><!--[if (mso)|(IE)]><td =
+align=3D"center" width=3D"165" style=3D"width: 165px;padding: =
+0px;border-top: 0px solid transparent;border-left: 0px solid =
+transparent;border-right: 1px solid #CCC;border-bottom: 1px solid =
+#CCC;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: =
+0px;" valign=3D"top"><![endif]--><div class=3D"u-col u-col-33p33" =
+style=3D"max-width: 320px;min-width: 166.67px;display: =
+table-cell;vertical-align: top;">  <div style=3D"height: 100%;width: 100% !=
+important;border-radius: 0px;-webkit-border-radius: 0px; =
+-moz-border-radius: 0px;">  <!--[if (!mso)&(!IE)]><!--><div =
+style=3D"box-sizing: border-box; height: 100%; padding: 0px;border-top: 0px=
+ solid transparent;border-left: 0px solid transparent;border-right: 1px =
+solid #CCC;border-bottom: 1px solid #CCC;border-radius: =
+0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;"><!--<![endif]--> =
+ <table style=3D"font-family:arial,helvetica,sans-serif;" =
+role=3D"presentation" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" =
+border=3D"0">  <tbody>    <tr>      <td style=3D"overflow-wrap:break-word;w=
+ord-break:break-word;padding:20px 10px 20px 30px;font-family:arial,=
+helvetica,sans-serif;" align=3D"left">          <div style=3D"font-size: =
+12px; color: #626262; line-height: 140%; text-align: left; word-wrap: =
+break-word;">    <p style=3D"line-height: 140%;">=C2=A39.95</p>  </div>    =
+  </td>    </tr>  </tbody></table>  <!--[if (!mso)&(!IE)]><!--></div><!--<!=
+[endif]-->  </div></div><!--[if (mso)|(IE)]></td><![endif]--><!--[if =
+(mso)|(IE)]><td align=3D"center" width=3D"166" style=3D"width: =
+166px;padding: 0px;border-top: 0px solid transparent;border-left: 0px solid=
+ transparent;border-right: 0px solid transparent;border-bottom: 1px solid =
+#CCC;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: =
+0px;" valign=3D"top"><![endif]--><div class=3D"u-col u-col-33p33" =
+style=3D"max-width: 320px;min-width: 166.67px;display: =
+table-cell;vertical-align: top;">  <div style=3D"height: 100%;width: 100% !=
+important;border-radius: 0px;-webkit-border-radius: 0px; =
+-moz-border-radius: 0px;">  <!--[if (!mso)&(!IE)]><!--><div =
+style=3D"box-sizing: border-box; height: 100%; padding: 0px;border-top: 0px=
+ solid transparent;border-left: 0px solid transparent;border-right: 0px =
+solid transparent;border-bottom: 1px solid #CCC;border-radius: =
+0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;"><!--<![endif]--> =
+ <table style=3D"font-family:arial,helvetica,sans-serif;" =
+role=3D"presentation" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" =
+border=3D"0">  <tbody>    <tr>      <td style=3D"overflow-wrap:break-word;w=
+ord-break:break-word;padding:20px 10px 20px 30px;font-family:arial,=
+helvetica,sans-serif;" align=3D"left">          <div style=3D"font-size: =
+12px; color: #626262; line-height: 140%; text-align: left; word-wrap: =
+break-word;">    <p style=3D"line-height: 140%;">=C2=A35.00</p>  </div>    =
+  </td>    </tr>  </tbody></table>  <!--[if (!mso)&(!IE)]><!--></div><!--<!=
+[endif]-->  </div></div><!--[if (mso)|(IE)]></td><![endif]-->      <!--[if =
+(mso)|(IE)]></tr></table></td></tr></table><![endif]-->    </div>  </div>  =
+</div>      <div class=3D"u-row-container" style=3D"padding: =
+0px;background-color: transparent">  <div class=3D"u-row" style=3D"margin: =
+0 auto;min-width: 320px;max-width: 500px;overflow-wrap: =
+break-word;word-wrap: break-word;word-break: break-word;background-color: =
+#ffffff;">    <div style=3D"border-collapse: collapse;display: table;width:=
+ 100%;height: 100%;background-color: transparent;">      <!--[if =
+(mso)|(IE)]><table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" =
+border=3D"0"><tr><td style=3D"padding: 0px;background-color: transparent;" =
+align=3D"center"><table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" =
+style=3D"width:500px;"><tr style=3D"background-color: #ffffff;"><!=
+[endif]-->      <!--[if (mso)|(IE)]><td align=3D"center" width=3D"165" =
+style=3D"width: 165px;padding: 0px;border-top: 0px solid =
+transparent;border-left: 0px solid transparent;border-right: 1px solid =
+#CCC;border-bottom: 1px solid #CCC;border-radius: 0px;-webkit-border-radius=
+: 0px; -moz-border-radius: 0px;" valign=3D"top"><![endif]--><div =
+class=3D"u-col u-col-33p33" style=3D"max-width: 320px;min-width: 166.=
+67px;display: table-cell;vertical-align: top;">  <div style=3D"height: =
+100%;width: 100% !important;border-radius: 0px;-webkit-border-radius: 0px; =
+-moz-border-radius: 0px;">  <!--[if (!mso)&(!IE)]><!--><div =
+style=3D"box-sizing: border-box; height: 100%; padding: 0px;border-top: 0px=
+ solid transparent;border-left: 0px solid transparent;border-right: 1px =
+solid #CCC;border-bottom: 1px solid #CCC;border-radius: =
+0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;"><!--<![endif]--> =
+ <table style=3D"font-family:arial,helvetica,sans-serif;" =
+role=3D"presentation" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" =
+border=3D"0">  <tbody>    <tr>      <td style=3D"overflow-wrap:break-word;w=
+ord-break:break-word;padding:20px 10px 20px 30px;font-family:arial,=
+helvetica,sans-serif;" align=3D"left">          <div style=3D"font-size: =
+12px; color: #626262; line-height: 140%; text-align: left; word-wrap: =
+break-word;">    <p style=3D"line-height: 140%;">Frequent shares dealing =
+charge (if you had 10 or more share deals in the previous month)</p>  =
+</div>      </td>    </tr>  </tbody></table>  <!--[if (!mso)&(!IE)]><!=
+--></div><!--<![endif]-->  </div></div><!--[if (mso)|(IE)]></td><!=
+[endif]--><!--[if (mso)|(IE)]><td align=3D"center" width=3D"165" =
+style=3D"width: 165px;padding: 0px;border-top: 0px solid =
+transparent;border-left: 0px solid transparent;border-right: 1px solid =
+#CCC;border-bottom: 1px solid #CCC;border-radius: 0px;-webkit-border-radius=
+: 0px; -moz-border-radius: 0px;" valign=3D"top"><![endif]--><div =
+class=3D"u-col u-col-33p33" style=3D"max-width: 320px;min-width: 166.=
+67px;display: table-cell;vertical-align: top;">  <div style=3D"height: =
+100%;width: 100% !important;border-radius: 0px;-webkit-border-radius: 0px; =
+-moz-border-radius: 0px;">  <!--[if (!mso)&(!IE)]><!--><div =
+style=3D"box-sizing: border-box; height: 100%; padding: 0px;border-top: 0px=
+ solid transparent;border-left: 0px solid transparent;border-right: 1px =
+solid #CCC;border-bottom: 1px solid #CCC;border-radius: =
+0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;"><!--<![endif]--> =
+ <table style=3D"font-family:arial,helvetica,sans-serif;" =
+role=3D"presentation" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" =
+border=3D"0">  <tbody>    <tr>      <td style=3D"overflow-wrap:break-word;w=
+ord-break:break-word;padding:20px 10px 20px 30px;font-family:arial,=
+helvetica,sans-serif;" align=3D"left">          <div style=3D"font-size: =
+12px; color: #626262; line-height: 140%; text-align: left; word-wrap: =
+break-word;">    <p style=3D"line-height: 140%;">=C2=A34.95</p>  </div>    =
+  </td>    </tr>  </tbody></table>  <!--[if (!mso)&(!IE)]><!--></div><!--<!=
+[endif]-->  </div></div><!--[if (mso)|(IE)]></td><![endif]--><!--[if =
+(mso)|(IE)]><td align=3D"center" width=3D"166" style=3D"width: =
+166px;padding: 0px;border-top: 0px solid transparent;border-left: 0px solid=
+ transparent;border-right: 0px solid transparent;border-bottom: 1px solid =
+#CCC;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: =
+0px;" valign=3D"top"><![endif]--><div class=3D"u-col u-col-33p33" =
+style=3D"max-width: 320px;min-width: 166.67px;display: =
+table-cell;vertical-align: top;">  <div style=3D"height: 100%;width: 100% !=
+important;border-radius: 0px;-webkit-border-radius: 0px; =
+-moz-border-radius: 0px;">  <!--[if (!mso)&(!IE)]><!--><div =
+style=3D"box-sizing: border-box; height: 100%; padding: 0px;border-top: 0px=
+ solid transparent;border-left: 0px solid transparent;border-right: 0px =
+solid transparent;border-bottom: 1px solid #CCC;border-radius: =
+0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;"><!--<![endif]--> =
+ <table style=3D"font-family:arial,helvetica,sans-serif;" =
+role=3D"presentation" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" =
+border=3D"0">  <tbody>    <tr>      <td style=3D"overflow-wrap:break-word;w=
+ord-break:break-word;padding:20px 10px 20px 30px;font-family:arial,=
+helvetica,sans-serif;" align=3D"left">          <div style=3D"font-size: =
+12px; color: #626262; line-height: 140%; text-align: left; word-wrap: =
+break-word;">    <p style=3D"line-height: 140%;">=C2=A33.50</p>  </div>    =
+  </td>    </tr>  </tbody></table>  <!--[if (!mso)&(!IE)]><!--></div><!--<!=
+[endif]-->  </div></div><!--[if (mso)|(IE)]></td><![endif]-->      <!--[if =
+(mso)|(IE)]></tr></table></td></tr></table><![endif]-->    </div>  </div>  =
+</div>      <div class=3D"u-row-container" style=3D"padding: =
+0px;background-color: transparent">  <div class=3D"u-row" style=3D"margin: =
+0 auto;min-width: 320px;max-width: 500px;overflow-wrap: =
+break-word;word-wrap: break-word;word-break: break-word;background-color: =
+#ffffff;">    <div style=3D"border-collapse: collapse;display: table;width:=
+ 100%;height: 100%;background-color: transparent;">      <!--[if =
+(mso)|(IE)]><table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" =
+border=3D"0"><tr><td style=3D"padding: 0px;background-color: transparent;" =
+align=3D"center"><table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" =
+style=3D"width:500px;"><tr style=3D"background-color: #ffffff;"><!=
+[endif]-->      <!--[if (mso)|(IE)]><td align=3D"center" width=3D"165" =
+style=3D"width: 165px;padding: 0px;border-top: 0px solid =
+transparent;border-left: 0px solid transparent;border-right: 1px solid =
+#CCC;border-bottom: 1px solid #CCC;border-radius: 0px;-webkit-border-radius=
+: 0px; -moz-border-radius: 0px;" valign=3D"top"><![endif]--><div =
+class=3D"u-col u-col-33p33" style=3D"max-width: 320px;min-width: 166.=
+67px;display: table-cell;vertical-align: top;">  <div style=3D"height: =
+100%;width: 100% !important;border-radius: 0px;-webkit-border-radius: 0px; =
+-moz-border-radius: 0px;">  <!--[if (!mso)&(!IE)]><!--><div =
+style=3D"box-sizing: border-box; height: 100%; padding: 0px;border-top: 0px=
+ solid transparent;border-left: 0px solid transparent;border-right: 1px =
+solid #CCC;border-bottom: 1px solid #CCC;border-radius: =
+0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;"><!--<![endif]--> =
+ <table style=3D"font-family:arial,helvetica,sans-serif;" =
+role=3D"presentation" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" =
+border=3D"0">  <tbody>    <tr>      <td style=3D"overflow-wrap:break-word;w=
+ord-break:break-word;padding:20px 10px 20px 30px;font-family:arial,=
+helvetica,sans-serif;" align=3D"left">          <div style=3D"font-size: =
+12px; color: #626262; line-height: 140%; text-align: left; word-wrap: =
+break-word;">    <p style=3D"line-height: 140%;">Telephone dealing</p>  =
+</div>      </td>    </tr>  </tbody></table>  <!--[if (!mso)&(!IE)]><!=
+--></div><!--<![endif]-->  </div></div><!--[if (mso)|(IE)]></td><!=
+[endif]--><!--[if (mso)|(IE)]><td align=3D"center" width=3D"165" =
+style=3D"width: 165px;padding: 0px;border-top: 0px solid =
+transparent;border-left: 0px solid transparent;border-right: 1px solid =
+#CCC;border-bottom: 1px solid #CCC;border-radius: 0px;-webkit-border-radius=
+: 0px; -moz-border-radius: 0px;" valign=3D"top"><![endif]--><div =
+class=3D"u-col u-col-33p33" style=3D"max-width: 320px;min-width: 166.=
+67px;display: table-cell;vertical-align: top;">  <div style=3D"height: =
+100%;width: 100% !important;border-radius: 0px;-webkit-border-radius: 0px; =
+-moz-border-radius: 0px;">  <!--[if (!mso)&(!IE)]><!--><div =
+style=3D"box-sizing: border-box; height: 100%; padding: 0px;border-top: 0px=
+ solid transparent;border-left: 0px solid transparent;border-right: 1px =
+solid #CCC;border-bottom: 1px solid #CCC;border-radius: =
+0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;"><!--<![endif]--> =
+ <table style=3D"font-family:arial,helvetica,sans-serif;" =
+role=3D"presentation" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" =
+border=3D"0">  <tbody>    <tr>      <td style=3D"overflow-wrap:break-word;w=
+ord-break:break-word;padding:20px 10px 20px 30px;font-family:arial,=
+helvetica,sans-serif;" align=3D"left">          <div style=3D"font-size: =
+12px; color: #626262; line-height: 140%; text-align: left; word-wrap: =
+break-word;">    <p style=3D"line-height: 140%;">=C2=A329.95</p>  </div>   =
+   </td>    </tr>  </tbody></table>  <!--[if (!mso)&(!IE)]><!--></div><!--<=
+![endif]-->  </div></div><!--[if (mso)|(IE)]></td><![endif]--><!--[if =
+(mso)|(IE)]><td align=3D"center" width=3D"166" style=3D"width: =
+166px;padding: 0px;border-top: 0px solid transparent;border-left: 0px solid=
+ transparent;border-right: 0px solid transparent;border-bottom: 1px solid =
+#CCC;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: =
+0px;" valign=3D"top"><![endif]--><div class=3D"u-col u-col-33p33" =
+style=3D"max-width: 320px;min-width: 166.67px;display: =
+table-cell;vertical-align: top;">  <div style=3D"height: 100%;width: 100% !=
+important;border-radius: 0px;-webkit-border-radius: 0px; =
+-moz-border-radius: 0px;">  <!--[if (!mso)&(!IE)]><!--><div =
+style=3D"box-sizing: border-box; height: 100%; padding: 0px;border-top: 0px=
+ solid transparent;border-left: 0px solid transparent;border-right: 0px =
+solid transparent;border-bottom: 1px solid #CCC;border-radius: =
+0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;"><!--<![endif]--> =
+ <table style=3D"font-family:arial,helvetica,sans-serif;" =
+role=3D"presentation" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" =
+border=3D"0">  <tbody>    <tr>      <td style=3D"overflow-wrap:break-word;w=
+ord-break:break-word;padding:20px 10px 20px 30px;font-family:arial,=
+helvetica,sans-serif;" align=3D"left">          <div style=3D"font-size: =
+12px; color: #626262; line-height: 140%; text-align: left; word-wrap: =
+break-word;">    <p style=3D"line-height: 140%;">=C2=A325.00</p>  </div>   =
+   </td>    </tr>  </tbody></table>  <!--[if (!mso)&(!IE)]><!--></div><!--<=
+![endif]-->  </div></div><!--[if (mso)|(IE)]></td><![endif]-->      <!--[if=
+ (mso)|(IE)]></tr></table></td></tr></table><![endif]-->    </div>  </div> =
+ </div>      <div class=3D"u-row-container" style=3D"padding: =
+0px;background-color: transparent">  <div class=3D"u-row" style=3D"margin: =
+0 auto;min-width: 320px;max-width: 500px;overflow-wrap: =
+break-word;word-wrap: break-word;word-break: break-word;background-color: =
+transparent;">    <div style=3D"border-collapse: collapse;display: =
+table;width: 100%;height: 100%;background-color: transparent;">      <!=
+--[if (mso)|(IE)]><table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0"=
+ border=3D"0"><tr><td style=3D"padding: 0px;background-color: transparent;"=
+ align=3D"center"><table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" =
+style=3D"width:500px;"><tr style=3D"background-color: transparent;"><!=
+[endif]-->      <!--[if (mso)|(IE)]><td align=3D"center" width=3D"500" =
+style=3D"background-color: #ffffff;width: 500px;padding: 0px;border-top: =
+0px solid transparent;border-left: 0px solid transparent;border-right: 0px =
+solid transparent;border-bottom: 0px solid transparent;border-radius: =
+0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;" valign=3D"top"><!=
+[endif]--><div class=3D"u-col u-col-100" style=3D"max-width: =
+320px;min-width: 500px;display: table-cell;vertical-align: top;">  <div =
+style=3D"background-color: #ffffff;height: 100%;width: 100% !=
+important;border-radius: 0px;-webkit-border-radius: 0px; =
+-moz-border-radius: 0px;">  <!--[if (!mso)&(!IE)]><!--><div =
+style=3D"box-sizing: border-box; height: 100%; padding: 0px;border-top: 0px=
+ solid transparent;border-left: 0px solid transparent;border-right: 0px =
+solid transparent;border-bottom: 0px solid transparent;border-radius: =
+0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;"><!--<![endif]--> =
+ <table style=3D"font-family:arial,helvetica,sans-serif;" =
+role=3D"presentation" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" =
+border=3D"0">  <tbody>    <tr>      <td style=3D"overflow-wrap:break-word;w=
+ord-break:break-word;padding:10px 20px 40px;font-family:arial,helvetica,=
+sans-serif;" align=3D"left">          <div style=3D"font-size: 13px; =
+line-height: 140%; text-align: left; word-wrap: break-word;">    <p =
+style=3D"line-height: 140%;"><span style=3D"color: #393939; line-height: 18=
+.2px;"><strong>All other charges remain unchanged. </strong></span></p><p =
+style=3D"line-height: 140%;">&nbsp;</p><p style=3D"line-height: =
+140%;"><span style=3D"color: #393939; line-height: 18.2px;">If you hold =
+more than =C2=A3100,000 in cash within an ISA or SIPP you'll also earn a =
+higher interest rate from September 1, 2024. We are also introducing higher=
+ interest rates for customers who hold cash in pension drawdown. More =
+details available here. We don't charge you for cash balances held on our =
+platform. </span></p><p style=3D"line-height: 140%;">&nbsp;</p><p =
+style=3D"line-height: 140%;"><span style=3D"color: #393939; line-height: 18=
+.2px;">Thank you again for being a valued AJ Bell customer. </span></p><p =
+style=3D"line-height: 140%;">&nbsp;</p><p style=3D"line-height: =
+140%;"><span style=3D"color: #393939; line-height: 18.2px;">Kind regards,=
+</span></p><p style=3D"line-height: 140%;">&nbsp;</p><p =
+style=3D"line-height: 140%;"><strong><span style=3D"color: #393939; =
+line-height: 18.2px;">AJ Bell</span></strong></p>  </div>      </td>    =
+</tr>  </tbody></table>  <!--[if (!mso)&(!IE)]><!--></div><!--<![endif]--> =
+ </div></div><!--[if (mso)|(IE)]></td><![endif]-->      <!--[if =
+(mso)|(IE)]></tr></table></td></tr></table><![endif]-->    </div>  </div>  =
+</div>      <!--[if (mso)|(IE)]></td></tr></table><![endif]-->    </td>  =
+</tr>  </tbody>  </table>  <!--[if mso]></div><![endif]-->  <!--[if =
+IE]></div><![endif]--><img id=3D"usecure-pixel" src=3D"https://api.usecure.=
+io/api/uPhish/results/open/-1/-1/1px.gif"><div style=3D"display:none;" =
+id=3D"usecure-phish-alert" data-simulation=3D"-1" data-user=3D"-1"></div></=
+body></html>
+----_NmP-a4d018f0348545d5-Part_1
+Content-Type:
+ application/vnd.openxmlformats-officedocument.wordprocessingml.document;
+ name="AJ Bell New Dealing Charges.docx"
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="AJ Bell New Dealing
+ Charges.docx"
+
+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
+sAcAAOGHAAAAAA==
+----_NmP-a4d018f0348545d5-Part_1--
